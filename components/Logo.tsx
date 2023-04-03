@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface LogoProps {
@@ -9,16 +10,24 @@ const Logo = ({ dark, large }: LogoProps) => {
   return (
     <Link href="/" className="min-w-[111px]">
       {dark ? (
-        <img
+        <Image
           src="images/logo-2.svg"
           alt="logo dark"
-          className={large ? "cursor-pointer w-40" : "cursor-pointer"}
+          width={large ? 160 : 111}
+          height={large ? 44 : 31}
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          className="cursor-pointer"
         />
       ) : (
-        <img
+        <Image
           src="images/logo.svg"
           alt="logo"
-          className={large ? "cursor-pointer w-40" : "cursor-pointer"}
+          width={large ? 160 : 111}
+          height={large ? 44 : 31}
+          className="cursor-pointer"
         />
       )}
     </Link>
