@@ -1,18 +1,20 @@
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import Button from "./Button";
 import { useRouter } from "next/router";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 
-const Header = () => {
-  const [stickyHeader, setStickyHeader] = useState(false);
-  const [isOpenMobileNav, setIsOpenMobileNav] = useState(false);
+const Header: FC = () => {
+  const [stickyHeader, setStickyHeader] = useState<boolean>(false);
+  const [isOpenMobileNav, setIsOpenMobileNav] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
+    setStickyHeader(window.scrollY >= 50 || router.asPath !== '/');
+
     const handleChangeHeader = () => {
-      if (window.scrollY >= 50) {
+      if (window.scrollY >= 50 || router.asPath !== '/') {
         setStickyHeader(true);
       } else {
         setStickyHeader(false);
@@ -28,7 +30,7 @@ const Header = () => {
     <div
       className={
         stickyHeader
-          ? "fixed top-0 left-0 right-0 bg-white h-16 flex items-center transition-all duration-500"
+          ? "fixed top-0 left-0 right-0 bg-white h-16 flex items-center drop-shadow-sm transition-all duration-500"
           : "fixed top-0 left-0 right-0 bg-transparent h-24 flex items-center transition-all duration-500"
       }
     >
@@ -112,8 +114,8 @@ const Header = () => {
           <ul
             className={
               isOpenMobileNav
-                ? "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 bottom-0 right-0 w-screen items-center justify-center transition-all duration-500"
-                : "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 bottom-0 right-full w-screen items-center justify-center transition-all duration-500"
+                ? "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 right-0 w-screen h-screen items-center justify-center transition-all duration-500"
+                : "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 right-full w-screen h-screen items-center justify-center transition-all duration-500"
             }
           >
             <li className={router.asPath === "/" ? "active w-full" : "w-full"}>

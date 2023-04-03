@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FC } from "react";
 
 interface LogoProps {
   dark?: boolean;
   large?: boolean;
 }
 
-const Logo = ({ dark, large }: LogoProps) => {
+const Logo: FC<LogoProps> = ({ dark, large }) => {
   return (
     <Link href="/" className="min-w-[111px]">
       {dark ? (
@@ -15,10 +16,6 @@ const Logo = ({ dark, large }: LogoProps) => {
           alt="logo dark"
           width={large ? 160 : 111}
           height={large ? 44 : 31}
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
           className="cursor-pointer"
         />
       ) : (

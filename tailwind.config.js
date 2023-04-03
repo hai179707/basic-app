@@ -30,12 +30,15 @@ module.exports = {
         'info': '#17a2b8',
         'warning': '#ffc107',
         'danger': '#dc3545',
-        'light': '#f8f9fa',
+        'light': '#ededed',
         'dark': '#343a40',
       },
       backgroundImage: {
         'red': 'linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%)',
         'blue': 'linear-gradient(to right,#33c8c1 0%,#119bd2 50%,#33c8c1 100%)'
+      },
+      dropShadow: {
+        'header-nav': '0 20px 50px 0 rgba(0,0,0,.05)'
       }
     }
   },
