@@ -30,8 +30,8 @@ const Header: FC = () => {
     <div
       className={
         stickyHeader
-          ? "fixed top-0 left-0 right-0 bg-white h-16 flex items-center drop-shadow-sm transition-all duration-500"
-          : "fixed top-0 left-0 right-0 bg-transparent h-24 flex items-center transition-all duration-500"
+          ? "fixed z-1 top-0 left-0 right-0 bg-white h-16 flex items-center drop-shadow-sm transition-all duration-500"
+          : "fixed z-1 top-0 left-0 right-0 bg-transparent h-24 flex items-center transition-all duration-500"
       }
     >
       <div className="ct-container flex justify-between items-center">
@@ -114,8 +114,8 @@ const Header: FC = () => {
           <ul
             className={
               isOpenMobileNav
-                ? "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 right-0 w-screen h-screen items-center justify-center z-1 transition-all duration-500"
-                : "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 right-full w-screen h-screen items-center justify-center z-1 transition-all duration-500"
+                ? "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 right-0 w-screen h-screen items-center justify-center transition-all duration-500"
+                : "text-black text-lg flex flex-col lg:hidden bg-white fixed top-0 right-full w-screen h-screen items-center justify-center transition-all duration-500"
             }
           >
             <li className={router.asPath === "/" ? "active w-full" : "w-full"}>

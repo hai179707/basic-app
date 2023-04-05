@@ -1,5 +1,5 @@
 import Brands from "@/components/Brands";
-import Features from "@/components/Features";
+import Services from "@/components/Services";
 import HeaderHero from "@/components/HeaderHero";
 import Head from "next/head";
 
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <HeaderHero />
       <Brands />
-      <Features />
+      <Services />
     </>
   );
 }

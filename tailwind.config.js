@@ -11,27 +11,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue': '#007bff',
-        'indigo': '#6610f2',
-        'purple': '#6f42c1',
-        'pink': '#e83e8c',
-        'red': '#dc3545',
-        'orange': '#fd7e14',
-        'yellow': '#ffc107',
-        'green': '#28a745',
-        'teal': '#20c997',
-        'cyan': '#17a2b8',
-        'white': '#fff',
-        'gray': '#6c757d',
-        'graydark': '#343a40',
-        'primary': '#007bff',
-        'secondary': '#6c757d',
-        'success': '#28a745',
-        'info': '#17a2b8',
-        'warning': '#ffc107',
-        'danger': '#dc3545',
-        'light': '#ededed',
-        'dark': '#343a40',
+        'ct-blue': '#007bff',
+        'ct-indigo': '#6610f2',
+        'ct-purple': '#6f42c1',
+        'ct-pink': '#e83e8c',
+        'ct-red': '#dc3545',
+        'ct-orange': '#fd7e14',
+        'ct-yellow': '#ffc107',
+        'ct-green': '#28a745',
+        'ct-teal': '#20c997',
+        'ct-cyan': '#17a2b8',
+        'ct-white': '#fff',
+        'ct-gray': '#6c757d',
+        'ct-graydark': '#343a40',
+        'ct-primary': '#007bff',
+        'ct-secondary': '#6c757d',
+        'ct-success': '#28a745',
+        'ct-info': '#17a2b8',
+        'ct-warning': '#ffc107',
+        'ct-danger': '#dc3545',
+        'ct-light': '#ededed',
+        'ct-dark': '#343a40',
       },
       backgroundImage: {
         'red': 'linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%)',
@@ -46,6 +46,9 @@ module.exports = {
       },
       zIndex: {
         1: '1'
+      },
+      dropShadow: {
+        'normal': '0 5px 30px rgba(167,167,167,.16)'
       }
     }
   },

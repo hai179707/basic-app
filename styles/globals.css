@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .active .header-nav-link {
-    @apply text-blue font-medium;
+    @apply text-ct-blue font-medium;
 }
 
 .ct-container {

@@ -1,7 +1,7 @@
 import { VariantProps, cva } from "class-variance-authority";
 import { FC, HTMLAttributes, memo } from "react";
 
-const sectionTitleVariants = cva("pt-2, pb-10", {
+const sectionTitleVariants = cva("pt-2 pb-10", {
   variants: {
     align: {
       center: "mx-auto",
@@ -36,10 +36,10 @@ const SectionTitle: FC<SectionTitleProps> = ({
       <div
         className={
           align === "center"
-            ? "w-36 h-1 mb-2 bg-vertical-red mx-auto"
+            ? "w-36 h-2 mb-2 bg-vertical-red mx-auto"
             : align === "left"
-            ? "w-36 h-1 mb-2 bg-vertical-red"
-            : "w-36 h-1 mb-2 bg-vertical-red ml-auto"
+            ? "w-36 h-2 mb-2 bg-vertical-red"
+            : "w-36 h-2 mb-2 bg-vertical-red ml-auto"
         }
       ></div>
       <div {...props} className={sectionTitleVariants({ align, width })}>
