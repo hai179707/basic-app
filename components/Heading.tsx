@@ -105,7 +105,7 @@ interface HeadingProps
 }
 
 const Heading: FC<HeadingProps> = ({
-  level: Level,
+  level,
   size,
   sizesm,
   sizemd,
@@ -116,10 +116,11 @@ const Heading: FC<HeadingProps> = ({
   children,
   ...props
 }) => {
+  const Tag: any  = level 
   return (
-    <Level {...props} className={headingVariants({ size, sizesm, sizemd, sizelg, sizexl, align, className })}>
+    <Tag {...props} className={headingVariants({ size, sizesm, sizemd, sizelg, sizexl, align, className })}>
       {children}
-    </Level>
+    </Tag>
   );
 };
 

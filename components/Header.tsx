@@ -24,7 +24,7 @@ const Header: FC = () => {
     window.addEventListener("scroll", handleChangeHeader);
 
     return () => window.removeEventListener("scroll", handleChangeHeader);
-  }, []);
+  }, [router.asPath]);
 
   return (
     <div
