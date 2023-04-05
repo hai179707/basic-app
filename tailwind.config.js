@@ -43,6 +43,9 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
+      },
+      zIndex: {
+        1: '1'
       }
     }
   },
