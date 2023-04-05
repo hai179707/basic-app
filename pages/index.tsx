@@ -1,3 +1,5 @@
+import Brands from "@/components/Brands";
+import Features from "@/components/Features";
 import HeaderHero from "@/components/HeaderHero";
 import Head from "next/head";
 
@@ -11,6 +13,8 @@ export default function Home() {
         <link rel="icon" href="images/favicon.webp" />
       </Head>
       <HeaderHero />
+      <Brands />
+      <Features />
     </>
   );
 }

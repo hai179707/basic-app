@@ -35,10 +35,14 @@ module.exports = {
       },
       backgroundImage: {
         'red': 'linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%)',
-        'blue': 'linear-gradient(to right,#33c8c1 0%,#119bd2 50%,#33c8c1 100%)'
+        'blue': 'linear-gradient(to right,#33c8c1 0%,#119bd2 50%,#33c8c1 100%)',
+        'vertical-red': 'linear-gradient(#fe8464 0%,#fe6e9a 100%)'
       },
       dropShadow: {
         'header-nav': '0 20px 50px 0 rgba(0,0,0,.05)'
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
       }
     }
   },

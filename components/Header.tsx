@@ -11,10 +11,10 @@ const Header: FC = () => {
   const router = useRouter();
 
   useEffect(() => {
-    setStickyHeader(window.scrollY >= 50 || router.asPath !== '/');
+    setStickyHeader(window.scrollY >= 50 || router.asPath !== "/");
 
     const handleChangeHeader = () => {
-      if (window.scrollY >= 50 || router.asPath !== '/') {
+      if (window.scrollY >= 50 || router.asPath !== "/") {
         setStickyHeader(true);
       } else {
         setStickyHeader(false);
@@ -37,7 +37,7 @@ const Header: FC = () => {
       <div className="ct-container flex justify-between items-center">
         <Logo dark={stickyHeader} />
         <div className="flex justify-end items-center">
-          <ul className="gap-6 lg:gap-10 text-white text-lg pr-10 hidden lg:flex">
+          <ul className="gap-6 lg:gap-10 text-white pr-10 hidden lg:flex">
             <li className={router.asPath === "/" ? "active" : ""}>
               <Link
                 className={

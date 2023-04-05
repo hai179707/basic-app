@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="relative">
+    <div className="relative font-poppins">
       <Header />
       <main className="min-h-[2000px]">{children}</main>
       <Footer />
