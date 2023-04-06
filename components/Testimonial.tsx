@@ -18,7 +18,7 @@ const Testimonial: FC = () => {
       </SectionTitle>
       <div className="pt-10 flex flex-wrap w-full gap-y-5 md:px-28 lg:px-0">
         <div className="px-4 w-full lg:w-1/3">
-          <Card>
+          <Card type='hover'>
             <div className="flex justify-between">
               <RiDoubleQuotesL className="text-3xl text-ct-blue group-hover:text-ct-orange transition-colors duration-500" />
               <div className="flex gap-2">
@@ -74,7 +74,7 @@ const Testimonial: FC = () => {
           </Card>
         </div>
         <div className="px-4 w-full lg:w-1/3">
-          <Card>
+          <Card type='hover'>
             <div className="flex justify-between">
               <RiDoubleQuotesL className="text-3xl text-ct-blue group-hover:text-ct-orange transition-colors duration-500" />
               <div className="flex gap-2">
