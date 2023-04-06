@@ -16,7 +16,7 @@ module.exports = {
         'ct-purple': '#6f42c1',
         'ct-pink': '#e83e8c',
         'ct-red': '#dc3545',
-        'ct-orange': '#fd7e14',
+        'ct-orange': '#fe806d',
         'ct-yellow': '#ffc107',
         'ct-green': '#28a745',
         'ct-teal': '#20c997',
@@ -36,7 +36,12 @@ module.exports = {
       backgroundImage: {
         'red': 'linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%)',
         'blue': 'linear-gradient(to right,#33c8c1 0%,#119bd2 50%,#33c8c1 100%)',
-        'vertical-red': 'linear-gradient(#fe8464 0%,#fe6e9a 100%)'
+        'white023': 'linear-gradient(rgba(255,255,255,.23) 0%,rgba(255,255,255,.23) 100%)',
+        'vertical-red': 'linear-gradient(#fe8464 0%,#fe6e9a 100%)',
+        'blue-overlay': 'linear-gradient(to right,rgba(54,28,193,.2) 0%,rgba(46,130,239,.2) 100%)',
+        'horizontal-green': 'linear-gradient(#33c8c1 0%,#119bd2 100%)',
+        'horizontal-red': 'linear-gradient(#fe8464 0%,#fe6e9a 100%)',
+        'horizontal-blue': 'linear-gradient(#361cc1 0%,#2e82ef 100%)',
       },
       dropShadow: {
         'header-nav': '0 20px 50px 0 rgba(0,0,0,.05)'

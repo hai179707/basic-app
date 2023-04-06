@@ -1,14 +1,24 @@
 import { VariantProps, cva } from "class-variance-authority";
-import { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes, memo } from "react";
 
 const cardVariants = cva(
-  "group bg-white rounded-xl drop-shadow-normal relative py-12 px-8 border-2 border-transparent transition-all duration-500",
+  "group bg-white rounded-xl overflow-hidden drop-shadow-normal relative border-2 transition-all duration-500",
   {
     variants: {
-        type: {
-            active: 'border-ct-red'
-        }
-    }
+      type: {
+        active: "active border-ct-orange",
+        default: "border-transparent",
+        hover: "border-transparent hover:border-ct-orange",
+      },
+      p: {
+        base: "p-8",
+        none: "p-0",
+      },
+    },
+    defaultVariants: {
+      p: "base",
+      type: "default",
+    },
   }
 );
 
@@ -16,13 +26,12 @@ interface CardProps
   extends HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof cardVariants> {}
 
-const Card: FC<CardProps> = ({ type, className, children, ...props }) => {
-
+const Card: FC<CardProps> = ({ type, p, className, children, ...props }) => {
   return (
-    <div {...props} className={cardVariants({ type, className })}>
+    <div {...props} className={cardVariants({ type, p, className })}>
       {children}
     </div>
   );
 };
 
-export default Card;
+export default memo(Card);

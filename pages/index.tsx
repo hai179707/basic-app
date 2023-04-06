@@ -2,6 +2,13 @@ import Brands from "@/components/Brands";
 import Services from "@/components/Services";
 import HeaderHero from "@/components/HeaderHero";
 import Head from "next/head";
+import About1 from "@/components/About1";
+import About2 from "@/components/About2";
+import About3 from "@/components/About3";
+import About4 from "@/components/About4";
+import Team from "@/components/Team";
+import Testimonial from "@/components/Testimonial";
+import BlogPosts from "@/components/BlogPosts";
 
 export default function Home() {
   return (
@@ -15,6 +22,13 @@ export default function Home() {
       <HeaderHero />
       <Brands />
       <Services />
+      <About1 />
+      <About2 />
+      <About3 />
+      <About4 />
+      <Team />
+      <Testimonial />
+      <BlogPosts />
     </>
   );
 }

@@ -2,6 +2,7 @@ import bannerBg from "@/assets/images/banner-bg.svg";
 import Button from "./Button";
 import Image from "next/image";
 import { useCallback } from "react";
+import Paragraph from "./Paragraph";
 
 const HeaderHero = () => {
   const handleClick = useCallback((): void => {
@@ -20,10 +21,10 @@ const HeaderHero = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
           Kickstart Your SaaS or App Site
         </h2>
-        <p className="py-10">
+        <Paragraph type="white" size="base" className="pt-10 mb-10">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor
-        </p>
+        </Paragraph>
         <Button theme="blue" className="mb-10" onClick={handleClick}>
           Get Started
         </Button>

@@ -3,14 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.active .header-nav-link {
+.active .ct-header-nav-link {
     @apply text-ct-blue font-medium;
 }
 
 .ct-container {
-    @apply container mx-auto px-5 lg:px-0
+    @apply container mx-auto px-5 lg:px-0;
 }
 
 .ct-title span {
-    @apply font-normal
+    @apply font-normal;
+}
+
+.active .ct-testimonial-quote {
+    @apply text-ct-orange;
 }

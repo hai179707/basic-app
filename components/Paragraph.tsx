@@ -1,7 +1,7 @@
 import { VariantProps, cva } from "class-variance-authority";
 import { FC, HTMLAttributes, memo } from "react";
 
-const headingVariants = cva("pt-2 font-bold ct-title", {
+const headingVariants = cva("pb-2", {
   variants: {
     size: {
       xs: "text-xs",
@@ -83,41 +83,37 @@ const headingVariants = cva("pt-2 font-bold ct-title", {
       left: "text-left",
       right: "text-right",
     },
-    level: {
-      h1: "h1",
-      h2: "h2",
-      h3: "h3",
-      h4: "h4",
-      h5: "h5",
-      h6: "h6",
+    type: {
+      secondary: "text-ct-secondary",
+      black: "text-black",
+      white: "text-white",
     },
   },
   defaultVariants: {
-    size: "base",
+    size: "sm",
     align: "left",
-    level: "h1",
+    type: "secondary",
   },
 });
 
-interface HeadingProps
-  extends HTMLAttributes<HTMLHeadingElement>,
+interface ParagraphProps
+  extends HTMLAttributes<HTMLParagraphElement>,
     VariantProps<typeof headingVariants> {}
 
-const Heading: FC<HeadingProps> = ({
-  level,
+const Paragraph: FC<ParagraphProps> = ({
   size,
   sizesm,
   sizemd,
   sizelg,
   sizexl,
+  type,
   align,
   className,
   children,
   ...props
 }) => {
-  const Tag: any = level;
   return (
-    <Tag
+    <p
       {...props}
       className={headingVariants({
         size,
@@ -125,13 +121,14 @@ const Heading: FC<HeadingProps> = ({
         sizemd,
         sizelg,
         sizexl,
+        type,
         align,
         className,
       })}
     >
       {children}
-    </Tag>
+    </p>
   );
 };
 
-export default memo(Heading);
+export default memo(Paragraph);

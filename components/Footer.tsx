@@ -7,23 +7,24 @@ import {
   RiLinkedinBoxFill,
   RiTwitterFill,
 } from "react-icons/ri";
+import Paragraph from "./Paragraph";
 
 const Footer: FC = () => {
   return (
-    <div className="py-10">
+    <div className="pb-10 pt-28">
       <div className="ct-container flex flex-wrap gap-y-10 border-b border-light pb-10">
         <div className="w-full lg:w-1/3 lg:pr-20">
           <Logo large dark />
-          <p className="py-10 text-secondary">
+          <Paragraph className="pt-10 mb-10">
             Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
-          </p>
+          </Paragraph>
           <ul className="flex gap-4 text-2xl text-secondary ">
             <li>
               <a
                 href="/"
                 target="_blank"
-                className="hover:text-blue transition-colors duration-500"
+                className="hover:text-ct-blue transition-colors duration-500"
               >
                 <RiFacebookCircleFill />
               </a>
@@ -32,7 +33,7 @@ const Footer: FC = () => {
               <a
                 href="/"
                 target="_blank"
-                className="hover:text-blue transition-colors duration-500"
+                className="hover:text-ct-blue transition-colors duration-500"
               >
                 <RiTwitterFill />
               </a>
@@ -41,7 +42,7 @@ const Footer: FC = () => {
               <a
                 href="/"
                 target="_blank"
-                className="hover:text-blue transition-colors duration-500"
+                className="hover:text-ct-blue transition-colors duration-500"
               >
                 <RiInstagramFill />
               </a>
@@ -50,7 +51,7 @@ const Footer: FC = () => {
               <a
                 href="/"
                 target="_blank"
-                className="hover:text-blue transition-colors duration-500"
+                className="hover:text-ct-blue transition-colors duration-500"
               >
                 <RiLinkedinBoxFill />
               </a>

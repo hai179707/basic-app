@@ -42,7 +42,7 @@ const Header: FC = () => {
               <Link
                 className={
                   stickyHeader
-                    ? "py-1 text-black transition-all duration-500 header-nav-link"
+                    ? "py-1 text-black transition-all duration-500 ct-header-nav-link"
                     : "py-1 transition-all duration-500"
                 }
                 href="/"
@@ -54,7 +54,7 @@ const Header: FC = () => {
               <Link
                 className={
                   stickyHeader
-                    ? "py-1 text-black transition-all duration-500 header-nav-link"
+                    ? "py-1 text-black transition-all duration-500 ct-header-nav-link"
                     : "py-1 transition-all duration-500"
                 }
                 href="/#features"
@@ -66,7 +66,7 @@ const Header: FC = () => {
               <Link
                 className={
                   stickyHeader
-                    ? "py-1 text-black transition-all duration-500 header-nav-link"
+                    ? "py-1 text-black transition-all duration-500 ct-header-nav-link"
                     : "py-1 transition-all duration-500"
                 }
                 href="/#about"
@@ -78,7 +78,7 @@ const Header: FC = () => {
               <Link
                 className={
                   stickyHeader
-                    ? "py-1 text-black transition-all duration-500 header-nav-link"
+                    ? "py-1 text-black transition-all duration-500 ct-header-nav-link"
                     : "py-1 transition-all duration-500"
                 }
                 href="/#why"
@@ -90,7 +90,7 @@ const Header: FC = () => {
               <Link
                 className={
                   stickyHeader
-                    ? "py-1 text-black transition-all duration-500 header-nav-link"
+                    ? "py-1 text-black transition-all duration-500 ct-header-nav-link"
                     : "py-1 transition-all duration-500"
                 }
                 href="/#team"
@@ -102,7 +102,7 @@ const Header: FC = () => {
               <Link
                 className={
                   stickyHeader
-                    ? "py-1 text-black transition-all duration-500 header-nav-link"
+                    ? "py-1 text-black transition-all duration-500 ct-header-nav-link"
                     : "py-1 transition-all duration-500"
                 }
                 href="/#blog"
@@ -120,7 +120,7 @@ const Header: FC = () => {
           >
             <li className={router.asPath === "/" ? "active w-full" : "w-full"}>
               <Link
-                className="py-2 header-nav-link w-full text-center block"
+                className="py-2 ct-header-nav-link w-full text-center block"
                 onClick={() => setIsOpenMobileNav(false)}
                 href="/"
               >
@@ -133,7 +133,7 @@ const Header: FC = () => {
               }
             >
               <Link
-                className="py-2 header-nav-link w-full text-center block"
+                className="py-2 ct-header-nav-link w-full text-center block"
                 onClick={() => setIsOpenMobileNav(false)}
                 href="/#features"
               >
@@ -146,7 +146,7 @@ const Header: FC = () => {
               }
             >
               <Link
-                className="py-2 header-nav-link w-full text-center block"
+                className="py-2 ct-header-nav-link w-full text-center block"
                 onClick={() => setIsOpenMobileNav(false)}
                 href="/#about"
               >
@@ -157,7 +157,7 @@ const Header: FC = () => {
               className={router.asPath === "/#why" ? "active w-full" : "w-full"}
             >
               <Link
-                className="py-2 header-nav-link w-full text-center block"
+                className="py-2 ct-header-nav-link w-full text-center block"
                 onClick={() => setIsOpenMobileNav(false)}
                 href="/#why"
               >
@@ -170,7 +170,7 @@ const Header: FC = () => {
               }
             >
               <Link
-                className="py-2 header-nav-link w-full text-center block"
+                className="py-2 ct-header-nav-link w-full text-center block"
                 onClick={() => setIsOpenMobileNav(false)}
                 href="/#team"
               >
@@ -183,7 +183,7 @@ const Header: FC = () => {
               }
             >
               <Link
-                className="py-2 header-nav-link w-full text-center block"
+                className="py-2 ct-header-nav-link w-full text-center block"
                 onClick={() => setIsOpenMobileNav(false)}
                 href="/#blog"
               >
